@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Inter,Segoe UI,Roboto,sans-serif;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        radial-gradient(circle at top left,#3d5afe 0%,transparent 35%),
+        radial-gradient(circle at bottom right,#7b2ff7 0%,transparent 30%),
+        linear-gradient(135deg,#0f172a,#111827,#1e293b);
+
+    color:white;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:25px;
+}
+
+.card{
+
+    width:420px;
+
+    padding:45px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:22px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.45);
+
+}
+
+h1{
+    font-size:2rem;
+    margin-bottom:8px;
+    text-align:center;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:35px;
+}
+
+.input-group{
+    margin-bottom:22px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-size:.95rem;
+    color:#dbeafe;
+}
+
+input{
+
+    width:100%;
+
+    padding:15px 16px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#94a3b8;
+}
+
+input:focus{
+
+    border-color:#6ea8fe;
+
+    box-shadow:
+        0 0 0 4px rgba(99,102,241,.25);
+
+    background:rgba(255,255,255,.08);
+
+}
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        #4f46e5,
+        #7c3aed
+    );
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    margin-top:10px;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(124,58,237,.45);
+
+}
+
+.footer{
+
+    margin-top:28px;
+
+    text-align:center;
+
+    color:#cbd5e1;
+
+}
+
+.footer a{
+
+    color:#8ab4ff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.footer a:hover{
+
+    color:white;
+
+    text-decoration:underline;
+
+}
+
+@media(max-width:500px){
+
+    .card{
+        width:100%;
+        padding:35px 25px;
+    }
+
+}
