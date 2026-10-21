@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/dash-style.css" />
+</head>
+
+<body>
+    <div class="app-shell">
+        <!-- Sidebar -->
+        <aside class="sidebar" aria-label="Sidebar navigation">
+            <div class="brand">
+                <div class="brand-mark">A</div>
+                <div>
+                    <p class="eyebrow">Workspace</p>
+                    <h1>AdminFlow</h1>
+                </div>
+            </div>
+
+            <nav class="nav" aria-label="Main navigation">
+                <p class="nav-label">Overview</p>
+
+                <a class="nav-item active" href="index.html">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor" d="M13 9V3h8v6zM3 13V3h8v10zm10 8V11h8v10zM3 21v-6h8v6z" />
+                    </svg>
+                    Dashboard
+                </a>
+                <a class="nav-item" href="analytics.html">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M7 17h2v-5H7zm8 0h2V7h-2zm-4 0h2v-3h-2zm0-5h2v-2h-2zm-6 9q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.587 1.413T19 21z" />
+                    </svg>
+                    Analytics
+                </a>
+                <a class="nav-item" href="orders.html">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M4 20V7.1L2.05 2.85L3.85 2L6.2 7.05h11.6L20.15 2l1.8.85L20 7.1V20zm6-7h4q.425 0 .713-.288T15 12t-.288-.712T14 11h-4q-.425 0-.712.288T9 12t.288.713T10 13" />
+                    </svg>
+                    Orders
+                </a>
+                <a class="nav-item" href="index.html">
+                    <svg viewBox="0 0 48 48" aria-hidden="true">
+                        <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                d="M8.609 36.987C5.32 33.378 3.32 28.614 3.32 23.39c0-11.264 9.297-20.395 20.765-20.395S44.85 12.127 44.85 23.39c0 7.965-4.65 14.86-11.427 18.218a30 30 0 0 1-13.898 3.387c-6.152 0-11.868-1.839-16.608-4.987c0 0 3.179-.347 5.69-3.022zm25.23-3.502c5.373-5.371 5.373-14.08 0-19.453a13.7 13.7 0 0 0-8.96-4.007c-.098-2.447 1.219-4.099 1.225-4.107h-.001l.001-.001a19.7 19.7 0 0 0-10.228 5.439a19.7 19.7 0 0 0-4.755 7.641q.207-.55.463-1.084q-.293.75-.533 1.532c-1.573 4.776-.463 10.242 3.335 14.04c5.372 5.372 14.082 5.372 19.454 0" />
+                            <path
+                                d="M17.13 22.345v2.847a2.057 2.057 0 1 0 4.114 0v-2.847a2.057 2.057 0 1 0-4.114 0m10.183 0v2.847a2.057 2.057 0 0 0 4.114 0v-2.847a2.057 2.057 0 0 0-4.114 0" />
+                        </g>
+                    </svg>
+                    Customers
+                </a>
+                <a class="nav-item" href="index.html">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M7 2H3a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1M5 21a2 2 0 1 1 2-2a2 2 0 0 1-2 2m2-9H3V3h4Zm-1 7a1 1 0 1 1-1-1a1 1 0 0 1 1 1m8-17h-4a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1m-2 19a2 2 0 1 1 2-2a2 2 0 0 1-2 2m2-9h-4V3h4Zm-1 7a1 1 0 1 1-1-1a1 1 0 0 1 1 1m8-17h-4a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1m-2 19a2 2 0 1 1 2-2a2 2 0 0 1-2 2m2-9h-4V3h4Zm-1 7a1 1 0 1 1-1-1a1 1 0 0 1 1 1" />
+                    </svg>
+                    Products
+                </a>
+                <a class="nav-item" href="index.html">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="M17 12V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14l4-4h10a1 1 0 0 0 1-1m4-6h-2v9H6v2a1 1 0 0 0 1 1h11l4 4V7a1 1 0 0 0-1-1" />
+                    </svg>
+                    Conversations
+                </a>
+                <a class="nav-item" href="index.html">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill="currentColor"
+                            d="m9.25 22l-.4-3.2q-.325-.125-.612-.3t-.563-.375L4.7 19.375l-2.75-4.75l2.575-1.95Q4.5 12.5 4.5 12.338v-.675q0-.163.025-.338L1.95 9.375l2.75-4.75l2.975 1.25q.275-.2.575-.375t.6-.3l.4-3.2h5.5l.4 3.2q.325.125.613.3t.562.375l2.975-1.25l2.75 4.75l-2.575 1.95q.025.175.025.338v.674q0 .163-.05.338l2.575 1.95l-2.75 4.75l-2.95-1.25q-.275.2-.575.375t-.6.3l-.4 3.2zm2.8-6.5q1.45 0 2.475-1.025T15.55 12t-1.025-2.475T12.05 8.5q-1.475 0-2.488 1.025T8.55 12t1.013 2.475T12.05 15.5" />
+                    </svg>
+                    Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-card">
+                <p class="eyebrow">Performance</p>
+                <strong>86.4%</strong>
+                <span>Efficiency target</span>
+                <div class="mini-progress" aria-hidden="true">
+                    <span></span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <main class="main-panel">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Overview</p>
+                    <h2>Dashboard</h2>
+                </div>
+
+                <div class="topbar-actions">
+                    <label class="search-box" aria-label="Search">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M10.5 4a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13Zm0 2a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9Zm8.1 17.3-4.2-4.2 1.4-1.4 4.2 4.2-1.4 1.4Z" />
+                        </svg>
+                        <input type="search" placeholder="Search" aria-label="Search dashboard" />
+                    </label>
+
+                    <button class="icon-button" aria-label="Notifications">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M12 3.5a5 5 0 0 1 5 5v3.5l1.7 4.1H5.3L7 12V8.5a5 5 0 0 1 5-5Zm0 17a2.5 2.5 0 0 1-2.45-2h4.9A2.5 2.5 0 0 1 12 20.5Z" />
+                        </svg>
+                    </button>
+
+                    <a class="ghost-button" href="dashboard-dark.html">Dark</a>
+
+                    <div class="user-pill" aria-label="User profile">
+                        <div class="avatar">JS</div>
+                        <div>
+                            <strong>Jade Stone</strong>
+                            <span>Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- KPI cards -->
+            <section class="stats-grid" aria-label="Key performance indicators">
+                <article class="stat-card accent-blue">
+                    <div class="stat-head">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <title>revenue-duotone-bold</title>
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2.5">
+                                    <path fill="currentColor" d="M2.5 12a4.5 4.5 0 1 0 9 0 4.5 4.5 0 1 0 -9 0"
+                                        opacity=".2" stroke="none" />
+                                    <path d="M2.5 12a4.5 4.5 0 1 0 9 0 4.5 4.5 0 1 0 -9 0" />
+                                    <path d="M7 10.5v3" />
+                                    <path d="m14 17 2.5 -2.5 2 2L22 13" />
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="trend up">+12.4%</span>
+                    </div>
+                    <p class="stat-label">Revenue</p>
+                    <h3>$84.2K</h3>
+                    <small>Compared to last month</small>
+                </article>
+
+                <article class="stat-card accent-purple">
+                    <div class="stat-head">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <title>orders</title>
+                                <path fill="currentColor"
+                                    d="M4 20V7.1L2.05 2.85L3.85 2L6.2 7.05h11.6L20.15 2l1.8.85L20 7.1V20zm6-7h4q.425 0 .713-.288T15 12t-.288-.712T14 11h-4q-.425 0-.712.288T9 12t.288.713T10 13" />
+                            </svg>
+                        </div>
+                        <span class="trend up">+8.1%</span>
+                    </div>
+                    <p class="stat-label">Orders</p>
+                    <h3>2,841</h3>
+                    <small>257 today</small>
+                </article>
+
+                <article class="stat-card accent-green">
+                    <div class="stat-head">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                                aria-hidden="true">
+                                <title>conversion-duotone-thin</title>
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="1.5">
+                                    <path fill="currentColor" d="M3 6a3 3 0 1 0 6 0 3 3 0 1 0 -6 0" opacity=".2"
+                                        stroke="none" />
+                                    <path fill="currentColor" d="m18.5 15 3.5 3.5 -3.5 3.5 -3.5 -3.5Z" opacity=".2"
+                                        stroke="none" />
+                                    <path d="M3 6a3 3 0 1 0 6 0 3 3 0 1 0 -6 0" />
+                                    <path d="m10 10 2 2" />
+                                    <path d="M14.5 11.5v3h-3" />
+                                    <path d="m18.5 15 3.5 3.5 -3.5 3.5 -3.5 -3.5Z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="trend down">-1.3%</span>
+                    </div>
+                    <p class="stat-label">Conversion</p>
+                    <h3>4.87%</h3>
+                    <small>From 4.93%</small>
+                </article>
+
+                <article class="stat-card accent-orange">
+                    <div class="stat-head">
+                        <div class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"
+                                aria-hidden="true">
+                                <title>user-active</title>
+                                <path fill="currentColor" d="M12 11a6 6 0 0 1 6 6v2H2v-2a6 6 0 0 1 6-6z" />
+                                <circle cx="10" cy="5" r="4" fill="currentColor" />
+                            </svg>
+                        </div>
+                        <span class="trend up">+6.7%</span>
+                    </div>
+                    <p class="stat-label">Active users</p>
+                    <h3>18.4K</h3>
+                    <small>432 online now</small>
+                </article>
+            </section>
+
+            <section class="content-grid">
+                <!-- Revenue chart -->
+                <article class="panel chart-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Performance</p>
+                            <h3>Monthly revenue</h3>
+                        </div>
+                        <button class="ghost-button">This year</button>
+                    </div>
+
+                    <div class="chart" aria-label="Monthly revenue chart">
+                        <div class="chart-grid" aria-hidden="true"></div>
+                        <div class="bars" aria-hidden="true">
+                            <div class="bar-group"><span class="bar height-40" style="--h:40%"></span><small>Jan</small>
+                            </div>
+                            <div class="bar-group"><span class="bar height-52" style="--h:52%"></span><small>Feb</small>
+                            </div>
+                            <div class="bar-group"><span class="bar height-46" style="--h:46%"></span><small>Mar</small>
+                            </div>
+                            <div class="bar-group"><span class="bar height-68" style="--h:68%"></span><small>Apr</small>
+                            </div>
+                            <div class="bar-group"><span class="bar height-58" style="--h:58%"></span><small>May</small>
+                            </div>
+                            <div class="bar-group"><span class="bar height-84" style="--h:84%"></span><small>Jun</small>
+                            </div>
+                            <div class="bar-group"><span class="bar height-74" style="--h:74%"></span><small>Jul</small>
+                            </div>
+                            <div class="bar-group"><span class="bar height-90" style="--h:90%"></span><small>Aug</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Team overview -->
+                <aside class="panel side-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">Team</p>
+                            <h3>Productivity</h3>
+                        </div>
+                    </div>
+
+                    <div class="progress-stack">
+                        <div class="metric-row">
+                            <div>
+                                <strong>Design</strong>
+                                <span>12 tasks</span>
+                            </div>
+                            <b>84%</b>
+                        </div>
+                        <div class="progress"><span style="width:84%"></span></div>
+
+                        <div class="metric-row">
+                            <div>
+                                <strong>Marketing</strong>
+                                <span>9 tasks</span>
+                            </div>
+                            <b>67%</b>
+                        </div>
+                        <div class="progress"><span style="width:67%"></span></div>
+
+                        <div class="metric-row">
+                            <div>
+                                <strong>Development</strong>
+                                <span>18 tasks</span>
+                            </div>
+                            <b>91%</b>
+                        </div>
+                        <div class="progress"><span style="width:91%"></span></div>
+                    </div>
+
+                    <div class="mini-cards">
+                        <div>
+                            <small>New leads</small>
+                            <strong>1,264</strong>
+                        </div>
+                        <div>
+                            <small>Tasks done</small>
+                            <strong>338</strong>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="bottom-grid">
+                <!-- Recent Orders -->
+                <article class="panel table-panel">
+                    <div class="panel-header">
+                        <div>
+                            <div class="eyebrow-row">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M4 20V7.1L2.05 2.85L3.85 2L6.2 7.05h11.6L20.15 2l1.8.85L20 7.1V20zm6-7h4q.425 0 .713-.288T15 12t-.288-.712T14 11h-4q-.425 0-.712.288T9 12t.288.713T10 13" />
+                                </svg>
+                                <p class="eyebrow">Orders</p>
+                            </div>
+                            <h3>Recent transactions</h3>
+                        </div>
+                        <button class="ghost-button">View all</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer</th>
+                                    <th>Product</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="user-badge">AL</span> Alex Lee</td>
+                                    <td>Pro plan</td>
+                                    <td>18 Aug</td>
+                                    <td><span class="status success">Paid</span></td>
+                                    <td>$149</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="user-badge alt">SM</span> Sara Moore</td>
+                                    <td>Website kit</td>
+                                    <td>17 Aug</td>
+                                    <td><span class="status pending">Pending</span></td>
+                                    <td>$89</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="user-badge yellow">JD</span> James Diaz</td>
+                                    <td>Branding pack</td>
+                                    <td>16 Aug</td>
+                                    <td><span class="status warning">Review</span></td>
+                                    <td>$240</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="user-badge green">CN</span> Chloe Nia</td>
+                                    <td>Enterprise</td>
+                                    <td>15 Aug</td>
+                                    <td><span class="status success">Paid</span></td>
+                                    <td>$420</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Activity feed -->
+                <aside class="panel activity-panel">
+                    <div class="panel-header">
+                        <div>
+                            <div class="eyebrow-row">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="currentColor"
+                                        d="M17 12V3a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14l4-4h10a1 1 0 0 0 1-1m4-6h-2v9H6v2a1 1 0 0 0 1 1h11l4 4V7a1 1 0 0 0-1-1" />
+                                </svg>
+                                <p class="eyebrow">Conversations</p>
+                            </div>
+                            <h3>Activity</h3>
+                        </div>
+                    </div>
+
+                    <ul class="activity-list">
+                        <li>
+                            <span class="dot blue"></span>
+                            <div>
+                                <strong>New client onboarded</strong>
+                                <small>12 minutes ago</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dot violet"></span>
+                            <div>
+                                <strong>Quarterly report shared</strong>
+                                <small>1 hour ago</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dot green"></span>
+                            <div>
+                                <strong>Campaign launched</strong>
+                                <small>3 hours ago</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="dot orange"></span>
+                            <div>
+                                <strong>Support ticket resolved</strong>
+                                <small>Yesterday</small>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
